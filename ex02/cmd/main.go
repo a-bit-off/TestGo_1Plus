@@ -3,14 +3,17 @@ package main
 import (
 	"ex02/pkg/csv"
 	"ex02/pkg/parser"
-	"fmt"
+	"log"
 )
 
 func main() {
 	influencers, err := parser.Parse("https://hypeauditor.com/top-instagram-all-russia/")
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 
-	csv.AddToCSV("../another/csvFiles/csvOutput.csv", influencers)
+	err = csv.AddToCSV("../another/csvFiles/csvOutput.csv", influencers)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
