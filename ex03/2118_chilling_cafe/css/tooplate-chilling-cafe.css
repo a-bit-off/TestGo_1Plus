@@ -223,3 +223,25 @@ a { transition: all 0.3s ease; }
     line-height: 1;
   }
 }
+
+/*My changes*/
+
+/*"Americano" поменять цвет на красный*/
+.addColorAmericanoRed {
+  color: red;
+}
+
+/*В разделе "Special Items" у изображений сделать круглые края*/
+.tm-special-item-img {
+  border-radius: 50%;
+}
+
+/*Продублируйте раздел "Special Items" и добавьте туда слайдер для изображений TODO*/
+
+
+/*Для мобильных устройств (маленький экран) не показывать раздел "About our cafe"*/
+@media (max-width: 480px) {
+  .tm-hidden-mobile {
+    display: none;
+  }
+}

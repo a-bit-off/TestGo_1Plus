@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
     <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
-<!--
-Tooplate 2118 Chilling Cafe
-https://www.tooplate.com/view/2118-chilling-cafe
--->
+
+    <!--
+    Tooplate 2118 Chilling Cafe
+    https://www.tooplate.com/view/2118-chilling-cafe
+    -->
   </head>
   <body>
     <div class="tm-container">
@@ -33,7 +34,7 @@ https://www.tooplate.com/view/2118-chilling-cafe
                 <th>Blended</th>
               </tr>
               <tr>
-                <td class="tm-text-left">Americano</td>
+                <td class="tm-text-left addColorAmericanoRed">Americano</td>
                 <td>$10</td>
                 <td>$15</td>
                 <td>-</td>
@@ -88,42 +89,55 @@ https://www.tooplate.com/view/2118-chilling-cafe
                 <th>Hot</th>
                 <th>Iced</th>
                 <th>Addon</th>
+                <th>Manufacturer</th> <!-- Добавленная колонка -->
               </tr>
               <tr>
                 <td class="tm-text-left">Pure White Milk</td>
                 <td>$5</td>
                 <td>$10</td>
                 <td>-</td>
+                <td>Ahmad TEA</td>
+
               </tr>
               <tr>
                 <td class="tm-text-left">Hong Kong Tea</td>
                 <td>$8</td>
                 <td>$12</td>
                 <td>$4</td>
+                <td>Ahmad TEA</td>
+
               </tr>
               <tr>
                 <td class="tm-text-left">Taiwan Tea</td>
                 <td>$4</td>
                 <td>$10</td>
                 <td>$4</td>
+                <td>Ahmad TEA</td>
+
               </tr>
               <tr>
                 <td class="tm-text-left">Bubble Tea</td>
                 <td>$8</td>
                 <td>$12</td>
                 <td>-</td>
+                <td>Ahmad TEA</td>
+
               </tr>
               <tr>
                 <td class="tm-text-left">Mixed Fruit Tea</td>
                 <td>$10</td>
                 <td>$10</td>
                 <td>$8</td>
+                <td>Ahmad TEA</td>
+
               </tr>
               <tr>
                 <td class="tm-text-left">Original Tea</td>
                 <td>$12</td>
                 <td>$12</td>
                 <td>-</td>
+                <td>Ahmad TEA</td>
+
               </tr>
             </table>
           </div>
@@ -156,9 +170,38 @@ https://www.tooplate.com/view/2118-chilling-cafe
             </figure>
           </div>
         </section>
+
+        <!-- Special Items Duplicate Slider -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Special Items</h2>
+          <div class="tm-special-items tm-special-items-slider">
+            <figure class="tm-special-item">
+              <img src="img/chilling-cafe-11.jpg" alt="Image" class="tm-special-item-img" />
+              <figcaption>
+                <span class="tm-item-name">Soft Deli Cup</span>
+                <span class="tm-item-price">$25</span>
+              </figcaption>
+            </figure>
+            <figure class="tm-special-item">
+              <img src="img/chilling-cafe-12.jpg" alt="Image" class="tm-special-item-img" />
+              <figcaption>
+                <span class="tm-item-name">Coffee Art</span>
+                <span class="tm-item-price">$30</span>
+              </figcaption>
+            </figure>
+            <figure class="tm-special-item">
+              <img src="img/chilling-cafe-13.jpg" alt="Image" class="tm-special-item-img" />
+              <figcaption>
+                <span class="tm-item-name">Speciality Tea</span>
+                <span class="tm-item-price">$35</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
         <hr />
         <!-- About our cafe -->
-        <section class="tm-section tm-section-small">
+        <section class="tm-section tm-section-small tm-hidden-mobile">
           <h2 class="tm-section-header">About our cafe</h2>
           <p>
             Chilling Cafe is a simple HTML website template provided by
@@ -213,6 +256,8 @@ https://www.tooplate.com/view/2118-chilling-cafe
       </footer>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
+
+
     <script>
       $(function() {
         // Adjust intro image height based on width.
@@ -230,6 +275,17 @@ https://www.tooplate.com/view/2118-chilling-cafe
           img.css("min-height", imgHeight + "px");
         });
       });
+    </script>
+
+    <!-- Подключение библиотеки Slick Slider -->
+    <script src="js/slick.min.js"></script>
+    <script src="css/slick.css"></script>
+
+    <!--slider-->
+    <script>
+
+      // $('.tm-special-items-slider').slick();
+
     </script>
   </body>
 </html>
