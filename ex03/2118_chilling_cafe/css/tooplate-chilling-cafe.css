@@ -236,9 +236,6 @@ a { transition: all 0.3s ease; }
   border-radius: 50%;
 }
 
-/*Продублируйте раздел "Special Items" и добавьте туда слайдер для изображений TODO*/
-
-
 /*Для мобильных устройств (маленький экран) не показывать раздел "About our cafe"*/
 @media (max-width: 480px) {
   .tm-hidden-mobile {

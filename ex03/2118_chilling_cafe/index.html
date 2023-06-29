@@ -9,6 +9,8 @@
     <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <!--
     Tooplate 2118 Chilling Cafe
     https://www.tooplate.com/view/2118-chilling-cafe
@@ -174,28 +176,33 @@
         <!-- Special Items Duplicate Slider -->
         <section class="tm-section">
           <h2 class="tm-section-header">Special Items</h2>
-          <div class="tm-special-items tm-special-items-slider">
-            <figure class="tm-special-item">
-              <img src="img/chilling-cafe-11.jpg" alt="Image" class="tm-special-item-img" />
-              <figcaption>
-                <span class="tm-item-name">Soft Deli Cup</span>
-                <span class="tm-item-price">$25</span>
-              </figcaption>
-            </figure>
-            <figure class="tm-special-item">
-              <img src="img/chilling-cafe-12.jpg" alt="Image" class="tm-special-item-img" />
-              <figcaption>
-                <span class="tm-item-name">Coffee Art</span>
-                <span class="tm-item-price">$30</span>
-              </figcaption>
-            </figure>
-            <figure class="tm-special-item">
-              <img src="img/chilling-cafe-13.jpg" alt="Image" class="tm-special-item-img" />
-              <figcaption>
-                <span class="tm-item-name">Speciality Tea</span>
-                <span class="tm-item-price">$35</span>
-              </figcaption>
-            </figure>
+          <div class="swiper">
+            <div class=" swiper-wrapper">
+              <figure class=" swiper-slide">
+                <img src="img/chilling-cafe-11.jpg" alt="Image" class="tm-special-item-img" />
+                <figcaption>
+                  <span class="tm-item-name">Soft Deli Cup</span>
+                  <span class="tm-item-price">$25</span>
+                </figcaption>
+              </figure>
+              <figure class=" swiper-slide">
+                <img src="img/chilling-cafe-12.jpg" alt="Image" class="tm-special-item-img" />
+                <figcaption>
+                  <span class="tm-item-name">Coffee Art</span>
+                  <span class="tm-item-price">$30</span>
+                </figcaption>
+              </figure>
+              <figure class=" swiper-slide">
+                <img src="img/chilling-cafe-13.jpg" alt="Image" class="tm-special-item-img" />
+                <figcaption>
+                  <span class="tm-item-name">Speciality Tea</span>
+                  <span class="tm-item-price">$35</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
 
@@ -257,7 +264,6 @@
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
 
-
     <script>
       $(function() {
         // Adjust intro image height based on width.
@@ -277,14 +283,9 @@
       });
     </script>
 
-    <!-- Подключение библиотеки Slick Slider -->
-    <script src="js/slick.min.js"></script>
-    <script src="css/slick.css"></script>
-
-    <!--slider-->
-    <script>
-
-      // $('.tm-special-items-slider').slick();
+    <!-- Подключение библиотеки swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
 
     </script>
   </body>
