@@ -1,0 +1,27 @@
+ID: bitcoin
+Symbol: btc
+Name: Bitcoin
+Image: https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579
+Current Price: 30705
+Market Cap: 595699794145
+Market Cap Rank: 1
+Fully Diluted Valuation: 644329621148
+Total Volume: 1.3323182505e+10
+High 24h: 30734
+Low 24h: 30017
+Price Change 24h: 527.51
+Price Change Percentage 24h: 1.74803
+Market Cap Change 24h: 1.0285382854e+10
+Market Cap Change Percentage 24h: 1.75694
+Circulating Supply: 1.9415056e+07
+Total Supply: 2.1e+07
+Max Supply: 2.1e+07
+Ath: 69045
+Ath Change Percentage: -55.52088
+Ath Date: 2021-11-10T14:24:11.849Z
+Atl: 67.81
+Atl Change Percentage: 45189.72444
+Atl Date: 2013-07-06T00:00:00.000Z
+ROI: <nil>
+Last Updated: 2023-06-29T13:55:56.139Z
+---------------------------
