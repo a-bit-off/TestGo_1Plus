@@ -19,7 +19,7 @@ type Coin struct {
 	CurrentPrice              float64 `json:"current_price"`
 	MarketCap                 int64   `json:"market_cap"`
 	MarketCapRank             int     `json:"market_cap_rank"`
-	FullyDilutedValuation     int64   `json:"fully_diluted_valuation"`
+	FullyDilutedValuation     float64 `json:"fully_diluted_valuation"`
 	TotalVolume               float64 `json:"total_volume"`
 	High24h                   float64 `json:"high_24h"`
 	Low24h                    float64 `json:"low_24h"`
@@ -49,6 +49,46 @@ type ROI struct {
 func New() *CoinsData {
 	return &CoinsData{}
 }
+
+//func (c *CoinsData) LoadCoinsData(apiURL string) error {
+//	// Ограничение запросов в секунду
+//	requestsPerSecond := 1
+//	interval := time.Second / time.Duration(requestsPerSecond)
+//	rateLimit := time.Tick(interval)
+//
+//	page := 1
+//	bazeURL := strings.TrimSuffix(apiURL, "1")
+//	for {
+//		// Ожидаем, пока не будет доступен следующий временной интервал
+//		<-rateLimit
+//
+//		fmt.Println("PAGE:", page)
+//		url := bazeURL + strconv.Itoa(page)
+//		response, err := http.Get(url)
+//		if err != nil {
+//			return err
+//		}
+//		defer response.Body.Close()
+//
+//		body, err := ioutil.ReadAll(response.Body)
+//		if err != nil {
+//			return err
+//		}
+//
+//		if len(body) == 0 {
+//			break
+//		}
+//
+//		var pageCoins []Coin
+//		err = json.Unmarshal(body, &pageCoins)
+//		if err != nil {
+//			return err
+//		}
+//		c.Coins = append(c.Coins, pageCoins...)
+//		page++
+//	}
+//	return nil
+//}
 
 func (c *CoinsData) LoadCoinsData(apiURL string) (err error) {
 	response, err := http.Get(apiURL)
