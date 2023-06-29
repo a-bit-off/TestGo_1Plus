@@ -19,6 +19,9 @@ func main() {
 	PrintAllCouns(data.Coins)
 
 	coin, err := data.GetCoinById(coinId)
+	if err != nil {
+		log.Fatal(err)
+	}
 	PrintCoin(coin)
 }
 
